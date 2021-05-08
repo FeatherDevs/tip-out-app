@@ -80,6 +80,7 @@ export default function LoginScreen({ navigation }: LoginProps) {
           <TextInput
             style={styles.input}
             onBlur={onBlur}
+            autoCapitalize='none'
             onChangeText={(value) => onChange(value)}
             value={value}
             placeholder="email"
@@ -96,6 +97,7 @@ export default function LoginScreen({ navigation }: LoginProps) {
           <TextInput
             style={styles.input}
             onBlur={onBlur}
+            secureTextEntry={true}
             onChangeText={(value) => onChange(value)}
             value={value}
             placeholder="password"

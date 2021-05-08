@@ -22,8 +22,8 @@ export default function ShiftInfoScreen({ navigation }: TipOutProps) {
 
   return (
     <View style={styles.container}>
-      <Text>Shift Info</Text>
-      {/* Total Sales */}
+      <Text style={ styles.title}>Shift Info</Text>
+      <Text style={{ fontSize: 22, marginLeft: 0, paddingRight: 125, color: "#b800e6",}}>Total Sales</Text>
       <Controller
         control={control}
         name="totalSales"
@@ -35,7 +35,7 @@ export default function ShiftInfoScreen({ navigation }: TipOutProps) {
               onBlur={onBlur}
               onChangeText={(value) => onChange(value)}
               value={value}
-              placeholder="Total Sales"
+              placeholder="$"
               placeholderTextColor="#f0b3ff"
               autoFocus={true}
               returnKeyType={"next"}
@@ -45,9 +45,9 @@ export default function ShiftInfoScreen({ navigation }: TipOutProps) {
           );
         }}
       />
-      {errors.totalSales && <Text>Total Sales is Required!</Text>}
+      {errors.totalSales && <Text style = {styles.error}>Total Sales is Required!</Text>}
 
-      {/* Tips */}
+      <Text style={{ fontSize: 22, marginLeft: 0, paddingRight: 100, color: "#b800e6",}}>Tips Received</Text>
       <Controller
         control={control}
         name="tipsReceived"
@@ -59,7 +59,7 @@ export default function ShiftInfoScreen({ navigation }: TipOutProps) {
               onBlur={onBlur}
               onChangeText={(value) => onChange(value)}
               value={value}
-              placeholder="Tips Received"
+              placeholder="$"
               placeholderTextColor="#f0b3ff"
               ref={tipsReceivedRef}
               blurOnSubmit={false}
@@ -69,9 +69,9 @@ export default function ShiftInfoScreen({ navigation }: TipOutProps) {
           );
         }}
       />
-      {errors.tipsReceived && <Text>Tips Received is Required!</Text>}
+      {errors.tipsReceived && <Text style = {styles.error}>Tips Received is Required!</Text>}
 
-      {/* Food */}
+      <Text style={{ fontSize: 22, marginLeft: 0, paddingRight: 125, color: "#b800e6",}}>Food Sales</Text>
       <Controller
         control={control}
         name="foodSales"
@@ -83,7 +83,7 @@ export default function ShiftInfoScreen({ navigation }: TipOutProps) {
               onBlur={onBlur}
               onChangeText={(value) => onChange(value)}
               value={value}
-              placeholder="Food Sales"
+              placeholder="$"
               placeholderTextColor="#f0b3ff"
               ref={foodSalesRef}
               blurOnSubmit={false}
@@ -93,9 +93,9 @@ export default function ShiftInfoScreen({ navigation }: TipOutProps) {
           );
         }}
       />
-      {errors.foodSales && <Text>Food Sales are Required!</Text>}
+      {errors.foodSales && <Text style = {styles.error}>Food Sales are Required!</Text>}
 
-      {/* Liquor */}
+      <Text style={{ fontSize: 22, marginLeft: 0, paddingRight: 115, color: "#b800e6",}}>Liquor Sales</Text>
       <Controller
         control={control}
         name="liquorSales"
@@ -107,15 +107,16 @@ export default function ShiftInfoScreen({ navigation }: TipOutProps) {
               onBlur={onBlur}
               onChangeText={(value) => onChange(value)}
               value={value}
-              placeholder="Liquor Sales"
+              placeholder="$"
               placeholderTextColor="#f0b3ff"
               ref={liquorSalesRef}
             />
           );
         }}
       />
-      {errors.liquorSales && <Text>Liquor Sales are Required!</Text>}
+      {errors.liquorSales && <Text style = {styles.error}>Liquor Sales are Required!</Text>}
 
+      <View style={{ paddingTop: 25 }}></View>
       <StyledPrimaryButton
         text={"Submit"}
         onPress={handleSubmit((data) => {

@@ -8,6 +8,14 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     padding: 20,
   },
+  image: {
+    width: 360,
+    height: 120,
+    marginBottom: 50,
+    borderColor: '#fae6ff',
+    borderWidth: 2,
+    borderRadius: 100,
+  },
   title: {
     fontSize: 20,
     fontWeight: "bold",
