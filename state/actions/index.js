@@ -13,6 +13,11 @@ export const addSlip = ({employeeTo,amount}) => ({
   payload: {employeeTo,amount},
 });
 
+export const deleteSlip = ({employeeTo}) => ({
+  type: Types.DELETE_SLIP,
+  payload: {employeeTo},
+});
+
 export const setShiftData = ({totalSales, tipsReceived, foodSales, liquorSales}) => ({
   type: Types.SET_SHIFT_DATA,
   payload: {totalSales, tipsReceived, foodSales, liquorSales},

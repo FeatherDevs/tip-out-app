@@ -30,6 +30,9 @@ const styles = StyleSheet.create({
     textAlign: "center",
     width: 100,
   },
+  addButton: {
+    margin: 10,
+  },
 });
 
 export default styles;

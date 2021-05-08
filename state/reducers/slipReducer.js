@@ -7,10 +7,12 @@ const initialState = {
 };
 
 const slipReducer = (state = initialState, action) => {
+  let slips
+
   switch (action.type) {
     case Types.ADD_SLIP:
       console.log("add slip", action.payload);
-      const slips = [...state.slips]
+      slips = [...state.slips]
       let existed = false;
       
       slips.forEach(slip => {
@@ -22,6 +24,14 @@ const slipReducer = (state = initialState, action) => {
 
       if (!existed) slips.push(action.payload)
 
+      return { ...state, slips };
+
+    case Types.DELETE_SLIP:
+      console.log("delete slip", action.type , " ",  action.payload);
+     slips = [...state.slips].filter(slip => {
+         return slip.employeeTo !== action.payload.employeeTo
+      })
+      console.log(slips)
       return { ...state, slips };
 
     case Types.SET_SHIFT_DATA:

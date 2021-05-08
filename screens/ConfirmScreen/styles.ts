@@ -29,6 +29,14 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     textAlign: "center",
   },
+  image: {
+    width: 360,
+    height: 360,
+    marginBottom: 50,
+    borderColor: '#fae6ff',
+    borderWidth: 2,
+    borderRadius: 100,
+  }
 });
 
 export default styles;
