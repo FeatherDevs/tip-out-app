@@ -28,7 +28,7 @@ export default function ConfirmScreen() {
       <Text>This has been changed: Total tips received {tipsReceived}</Text>
       <Text>Total tip out {total}</Text>
       <Text>Total tip out {(total / tipsReceived) * 100}%</Text>
-      <Text>Confirmation Code (table ID for the history for reference?)</Text>
+      <Text>Confirmation Code: G674-GH76-S44F-HJU7-D453</Text>
     </View>
   );
 }

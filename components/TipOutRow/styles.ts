@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   },
   text: {
     backgroundColor: "white",
-    height: 25,
+    height: 30,
     borderWidth: 1,
     fontSize: 15,
     color: "#b800e6",
@@ -31,7 +31,8 @@ const styles = StyleSheet.create({
     width: 100,
   },
   addButton: {
-    margin: 10,
+    width: 30,
+    height: 30,
   },
 });
 

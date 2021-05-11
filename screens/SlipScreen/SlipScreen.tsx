@@ -11,7 +11,7 @@ export default function SlipScreen({ navigation }: SlipProps) {
   //containerize slips
   return (
     <View style={styles.container}>
-      <Text>Slip</Text>
+      <Text style={styles.title}>Slip Input</Text>
       <TipOutInput />
 
       <StyledPrimaryButton

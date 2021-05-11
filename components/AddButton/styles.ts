@@ -18,7 +18,8 @@ const styles = StyleSheet.create({
   },
   text: {
     color: "#f5ccff",
-    fontSize: 40,
+    fontSize: 25,
+    justifyContent: "center"
   },
 });
 

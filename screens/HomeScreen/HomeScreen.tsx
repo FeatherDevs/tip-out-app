@@ -18,13 +18,15 @@ export default function HomeScreen() {
   
   return (
     <ImageBackground style={styles.backgroundImage} source={require('../../assets/images/restaurant-bg.png')} >
-      <View style={styles.container}>
+      <View style={{flex: 1,
+    alignItems: "center",
+    justifyContent: "center",}}><View style={styles.container}>
 
-      <TextAnimationFadeIn value={`Welcome`} delay={100} duration={1000} style={{color: '#b800e6', fontSize: 40, fontWeight: 'bold', backgroundColor: 'rgba(255, 255, 255, 0.7)'}} />
-      <TextAnimationFadeIn value={`${data?.getUser.first_name}`} delay={100} duration={1000} style={{color: '#b800e6', fontSize: 40, fontWeight: 'bold', backgroundColor: 'rgba(255, 255, 255, 0.7)'}} />
+      <TextAnimationFadeIn value={`Welcome`} delay={100} duration={1000} style={{color: '#b800e6', fontSize: 40, fontWeight: 'bold', }} />
+      <TextAnimationFadeIn value={`${data?.getUser.first_name}`} delay={100} duration={1000} style={{color: '#b800e6', fontSize: 40, fontWeight: 'bold', }} />
 
        
-     
+      </View>
     </View>
     </ImageBackground>
   );
