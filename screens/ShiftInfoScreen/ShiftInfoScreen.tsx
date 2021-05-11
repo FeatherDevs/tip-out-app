@@ -12,6 +12,7 @@ export default function ShiftInfoScreen({ navigation }: TipOutProps) {
     control,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
 
   const tipsReceivedRef = useRef(null);
@@ -124,6 +125,7 @@ export default function ShiftInfoScreen({ navigation }: TipOutProps) {
           // Alert.alert("Data Submitted", `${JSON.stringify(data)}`)
           dispatch(setShiftData(data))
           navigation.navigate("SlipScreen");
+          reset()
         })}
       />
     </View>
