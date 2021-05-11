@@ -20,7 +20,7 @@ const employees = [
   {
     id: 3,
     firstName: "Giovanni",
-    lastName: "Lithuma",
+    lastName: "Lituma",
     position: 2,
   },
   {
