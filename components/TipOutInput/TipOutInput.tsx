@@ -28,13 +28,8 @@ export default function TipOutInput() {
   const dispatch = useDispatch();
 
   return (
-    <View style={{ borderColor: "red", borderWidth: 2 }}>
-      <View
-        style={{
-          borderColor: "green",
-          borderWidth: 2,
-        }}
-      >
+    <View>
+      <View>
         <Controller
           control={control}
           name="employeeTo"
@@ -48,8 +43,6 @@ export default function TipOutInput() {
           style={{
             flexDirection: "row",
             justifyContent: "center",
-            borderColor: "blue",
-            borderWidth: 2,
           }}
         >
           <Controller

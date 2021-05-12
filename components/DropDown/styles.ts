@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   },
   dropDown: {
     backgroundColor: "white",
-    width: 230,
+    width: 270,
     borderRadius: 35,
   },
   text: {

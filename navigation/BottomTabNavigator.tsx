@@ -35,11 +35,11 @@ export default function BottomTabNavigator() {
         component={HomeNavigator}
         options={{
           tabBarIcon: ({ color }) => (
-            <TabBarIcon name="ios-code" color={color} />
+            <TabBarIcon name="home" color={color} />
           ),
         }}
       />
-      <BottomTab.Screen
+      {/* <BottomTab.Screen
         name="TBD"
         component={TBDNavigator}
         options={{
@@ -47,13 +47,13 @@ export default function BottomTabNavigator() {
             <TabBarIcon name="ios-code" color={color} />
           ),
         }}
-      />
+      /> */}
       <BottomTab.Screen
         name="TipOut"
         component={TipOutNavigator}
         options={{
           tabBarIcon: ({ color }) => (
-            <TabBarIcon name="ios-code" color={color} />
+            <TabBarIcon name="cash-outline" color={color} />
           ),
         }}
       />
@@ -62,7 +62,7 @@ export default function BottomTabNavigator() {
         component={HistoryNavigator}
         options={{
           tabBarIcon: ({ color }) => (
-            <TabBarIcon name="ios-code" color={color} />
+            <TabBarIcon name="book-outline" color={color} />
           ),
         }}
       />
@@ -71,7 +71,7 @@ export default function BottomTabNavigator() {
         component={AccountNavigator}
         options={{
           tabBarIcon: ({ color }) => (
-            <TabBarIcon name="ios-code" color={color} />
+            <TabBarIcon name="person-outline" color={color} />
           ),
         }}
       />

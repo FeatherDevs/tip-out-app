@@ -21,7 +21,7 @@ export default function ReviewScreen({navigation}: ReviewProps) {
   
   return (
     <View style={styles.container}>
-      <Text>Review</Text>
+      <Text style={styles.title}>Review</Text>
       <TipOutRowContainer />
       <Text>Total tips received {tipsReceived }</Text>
       <Text>Total tip out {total}</Text>

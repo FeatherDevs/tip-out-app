@@ -54,13 +54,14 @@
     "react-native-reanimated": "~2.1.0",
     "react-native-safe-area-context": "3.2.0",
     "react-native-screens": "~3.0.0",
+    "react-native-text-effects": "^1.0.0",
     "react-native-web": "~0.13.12",
     "react-redux": "^7.2.1",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.9",
-    "yup": "^0.32.9",
     "subscriptions-transport-ws": "^0.9.18",
-    "typesafe-actions": "^5.1.0"
+    "typesafe-actions": "^5.1.0",
+    "yup": "^0.32.9"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",

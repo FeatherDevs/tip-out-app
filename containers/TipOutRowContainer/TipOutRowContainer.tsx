@@ -15,7 +15,7 @@ export default function TipOutRowContainer() {
   //rey key with store index value
 
   return (
-    <ScrollView style={{ height: 100, borderWidth: 1 }}>
+    <ScrollView style={{ height: 100}}>
       <View style={{ alignItems: "center" }}>
         {slips.map((slip: any, index: number) => {
           return <TipOutRow key={index} slip={slip} />;

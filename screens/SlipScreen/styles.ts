@@ -9,8 +9,12 @@ const styles = StyleSheet.create({
     padding: 100,
   },
   title: {
-    fontSize: 20,
+    fontSize: 24,
     fontWeight: "bold",
+    color: "#b800e6",
+    textAlign: "center",
+    marginTop: "0%",
+    paddingBottom: "7%",
   },
   link: {
     marginTop: 15,
